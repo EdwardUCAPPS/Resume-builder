@@ -1,0 +1,109 @@
+#mainBodyProfile {
+  position: absolute;
+  top: 10vh;
+  /* header */
+  /* bottom: 7vh; */
+  /* footer */
+  width: 100%;
+  height: 105%;
+  background-color: rgb(0, 0, 0);
+  z-index: 99;
+
+  /* text-align: center; */
+}
+
+.Profile {
+  width: 60%;
+  margin: 0 auto;
+  /* padding: 20px; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-form-edit {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.form-group-edit {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* .input-field,
+.input-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+} */
+
+.input-field-edit {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 1vh;
+  box-sizing: border-box;
+  resize: none;
+  background-color: #2c2934;
+}
+
+.input-box {
+  height: 100px;
+  resize: vertical;
+  color: black;
+}
+
+.submitButton-profilePage {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto; 
+  display: block; 
+}
+
+.submitButton-profilePage:hover {
+  background-color: #0056b3;
+}
+
+#profileInfoDetails {
+  /* margin-top: 10px; */
+  padding-left: 5vw;
+
+  font-size: 2.5vw;
+  line-height: 2;
+}
+
+#editButton {
+  height: 6vh;
+  width: 6vw;
+
+  position: absolute;
+  /* left: 91vw; */
+  /* bottom: 9vh; */
+  right: 5vw;
+  top: 5vh;
+}

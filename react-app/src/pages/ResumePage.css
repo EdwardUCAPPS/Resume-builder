@@ -1,0 +1,223 @@
+.resumePageWrapper {
+  position: relative;
+  top: 3vh;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  /* Center the entire page horizontally */
+  align-items: flex-start;
+  /* Align content to the top */
+  overflow: hidden;
+  /* Prevents scrollbars if content exceeds the height */
+}
+
+.container-resumePage {
+  width: 100%;
+  max-width: 1000px;
+  /* Limit the maximum width for readability */
+  height: 100vh;
+  padding: 20px;
+  /* Adds padding for a bit of space around the form */
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  align-items: center;
+  /* Align the content to the left */
+  padding-left: 250px;
+}
+
+.Resume {
+  width: 100%;
+  padding: 20px;
+  /* Padding for the form */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  /* Set background color to black */
+  align-items: center;
+}
+
+.resume-header {
+  text-align: center;
+  /* Center the header */
+  width: 100%;
+  /* Make sure header takes full width */
+  margin-bottom: 20px;
+  /* Add some space below the header */
+  font-size: 3.5vw;
+  margin-bottom: 5vh;
+}
+
+.resume-form {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows items to wrap to the next line/column */
+  width: 100%;
+  align-items: flex-start;
+  /* Align items to the left */
+}
+
+
+.column {
+  width: 50%;
+  /* Each column takes up 50% of the width */
+  box-sizing: border-box;
+  padding-right: 20px;
+  /* Adds space between columns */
+}
+
+.form-group-resumePage {
+  width: 100%;
+  margin-bottom: 20px;
+  /* Increased margin for better spacing */
+  display: flex;
+  align-items: center;
+  /* Centers the label vertically with the input */
+}
+
+.label-ResumePage {
+  margin-bottom: 0;
+  /* Removes margin-bottom to align vertically */
+  font-weight: bold;
+  width: 30%;
+  /* Adjust width to ensure proper spacing between label and input */
+  text-align: right;
+  /* Right align labels to align with inputs */
+  padding-right: 10px;
+  /* Adds space between label and input */
+  color: #ddd;
+  /* Slightly lighter color for better contrast */
+}
+
+.input-field-resumePage,
+.input-box-resumePage {
+  width: 70%;
+  /* Adjust width to align with labels */
+  padding: 12px;
+  /* Slightly increased padding for better UX */
+  font-size: 1rem;
+  background-color: #222;
+  /* Set to a darker shade of black */
+  border: 1px solid #444;
+  /* Darker border */
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-box-resumePage {
+  height: calc(100% - 60px);
+  /* Take up the remaining space vertically */
+  resize: vertical;
+  width: 100%;
+  /* Make sure it takes full width of the column */
+}
+
+.column.textarea-column {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 60px);
+  /* Adjust height of this column */
+}
+
+.column.textarea-column .input-box {
+  flex-grow: 1;
+  /* Make sure the text areas fill up the remaining space */
+}
+
+.submitButton-resumePage {
+  padding: 12px 20px;
+  /* Increased padding for a larger button */
+  font-size: 1.1rem;
+  /* Slightly larger font for emphasis */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  /* Add margin to position it below the columns */
+  width: 100%;
+  /* Make the submit button stretch across both columns */
+}
+
+.submitButton-resumePage:hover {
+  background-color: #0056b3;
+}
+
+#workExperience {
+  height: 230px;
+  /* Increase the height of the Work Experience textbox */
+  width: 100%;
+  /* Ensure it takes the full width of its container */
+  resize: vertical;
+  /* Allow the user to resize vertically if needed */
+}
+
+#skills {
+  height: 230px;
+  /* Increase the height of the Skills textbox */
+  width: 100%;
+  /* Ensure it takes the full width of its container */
+  resize: vertical;
+  /* Allow the user to resize vertically if needed */
+}
+
+.resumePageWrapper.blur-background {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  width: 85vw;
+  height: 80vh;
+  /* max-width: 80vw;
+  max-height: 80vh; */
+  overflow: auto;
+  display: flex;
+  flex-direction: column; 
+  border: 2px solid white;
+}
+
+.popup-line {
+  margin: 8px 0; /* Adjust the margin here */
+}
+
+.close-popup-button {
+  margin-top: auto; /* Pushes the button to the bottom of the flex container */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center; 
+}
+
+.close-popup-button:hover {
+  background-color: #0056b3;
+}

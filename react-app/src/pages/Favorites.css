@@ -1,0 +1,135 @@
+.favoritesWrapper {
+  position: relative;
+  top: 3vh;
+  background-color: rgb(63, 182, 48);
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.favoritesPage {
+  position: absolute;
+  width: 80%;
+  top: 6vh;
+  right: 8vw;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.document-list {
+  list-style: none;
+  padding: 0;
+}
+
+.document-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  /* display: flex; */
+  justify-content: space-between;
+  /* Space between text content and the button */
+  align-items: center;
+  position: relative;
+  /* Ensure position is relative for consistent alignment */
+}
+
+.document-item-content {
+  flex-grow: 1;
+  /* Make content take up as much space as possible */
+}
+
+.document-item-delete-button,
+.document-item-view-button,
+.document-item-export-button {
+  margin-top: auto;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  position: absolute;
+
+}
+
+.document-item-view-button {
+  background-color: #007bff;
+  top: 5vh;
+  right: 6vw;
+}
+
+.document-item-delete-button {
+  background-color: #8e2121;
+  top: 5vh;
+  right: 2vw;
+}
+
+.document-item-view-button:hover {
+  background-color: #0056b3;
+}
+
+.document-item-delete-button:hover {
+  background-color: #6b1919;  
+}
+
+.document-item-export-button {
+  background-color: #1e1c24;
+  top: 5vh;
+  right: 12vw;
+}
+
+.document-item-export-button:hover {
+  background-color: #19171e;
+  top: 5vh;
+  right: 12vw;
+}
+
+.popup-favorites {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content-favorites {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  width: 85vw;
+  height: 80vh;
+  /* max-width: 80vw;
+    max-height: 80vh; */
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+}
+
+.popup-favorites-close-button {
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.popup-favorites-close-button:hover {
+  background-color: #0056b3;
+}
